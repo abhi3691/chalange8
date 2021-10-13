@@ -13,7 +13,7 @@ import Policies from "./src/Drawer/policies";
 import Settings from "./src/Drawer/Settings";
 import About from "./src/Drawer/About";
 import Help from "./src/Drawer/Help";
-
+import DrawerContent from "./src/DrawerContent";
 
 
 const stack = createStackNavigator()
@@ -39,7 +39,8 @@ function MyStack(){
 
 function MyDrawer(){
     return(
-        <Drawer.Navigator>
+        <Drawer.Navigator
+        drawerContent ={(props)=> <DrawerContent {...props} /> } >
             <Drawer.Screen
             name ='Home'
             component={Home} />
