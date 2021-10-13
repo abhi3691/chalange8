@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import { View, Text, StyleSheet } from 'react-native';
  
-export default class Help  extends Component  {
+export default class Wallet  extends Component  {
 render(){
     return(
         <View style={styles.container}>
-        <Text style={styles.TextStyle}>Help Page</Text>
+        <Text style={styles.TextStyle}>Wallet Page</Text>
         </View>
     )
 }

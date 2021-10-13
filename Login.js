@@ -12,7 +12,8 @@ render(){
         <TextInput style={styles.TextInputStyle} placeholder='Password' placeholderTextColor='green'>
 
         </TextInput>
-        <TouchableHighlight style={styles.buttonStyle}>
+        <TouchableHighlight style={styles.buttonStyle}
+        onPress={()=> this.props.navigation.navigate('Drawer')}>
             <Text style={styles.buttonTextStyle} >Login</Text>
         </TouchableHighlight>
         </View>
