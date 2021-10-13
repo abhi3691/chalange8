@@ -22,7 +22,7 @@ const Drawer = createDrawerNavigator()
 
 function MyStack(){
     return(
-        <stack.Navigator>
+        <stack.Navigator >
             <stack.Screen
             name='Login'
             component={Login}

@@ -2,18 +2,30 @@ import React,{Component} from 'react';
 import { View, Text, StyleSheet,TextInput,TouchableHighlight } from 'react-native';
  
 export default class Login  extends Component  {
+    constructor(){
+        super();
+        this.state={
+            name :null
+
+        }
+    }
+    updateValue (Username){
+        this.setState({name :Username})
+        
+    }
 render(){
     return(
         <View style={styles.container}>
         <Text style={styles.TextStyle}>Razo Pay</Text>
-        <TextInput style={styles.TextInputStyle} placeholder='User Name' placeholderTextColor='green'>
+        <TextInput style={styles.TextInputStyle} placeholder='User Name' placeholderTextColor='green'
+         onChangeText= {(Username)=> this.updateValue(Username)}>
 
         </TextInput>
-        <TextInput style={styles.TextInputStyle} placeholder='Password' placeholderTextColor='green'>
+        <TextInput style={styles.TextInputStyle} placeholder='Password' placeholderTextColor='green' secureTextEntry={true}>
 
         </TextInput>
         <TouchableHighlight style={styles.buttonStyle}
-        onPress={()=> this.props.navigation.navigate('Drawer')}>
+        onPress={()=> this.props.navigation.navigate('Drawer',{Username:this.state.name})}>
             <Text style={styles.buttonTextStyle} >Login</Text>
         </TouchableHighlight>
         </View>

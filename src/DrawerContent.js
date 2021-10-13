@@ -14,7 +14,7 @@ render(){
             </View>
             
             <View style={styles.infoView}>
-            <Text style={styles.nameText}>Favaz</Text>
+            <Text style={styles.nameText}> Abhinand </Text>
             <TouchableHighlight style={styles.GoldButton}>
             <Text style={styles.GoldText}>Gold</Text>
             </TouchableHighlight>
