@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import Login from './Login'
+import Login from './src/Login'
 import Home from "./src/Drawer/Home";
 import Profile from "./src/Drawer/Profile";
 import Wallet from "./src/Drawer/Wallet";
@@ -33,6 +33,7 @@ function MyStack(){
             component={MyDrawer}
             options ={{headerShown:false}}
             />
+
         </stack.Navigator>
     )
 }

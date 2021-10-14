@@ -2,6 +2,9 @@ import React,{Component} from 'react'
 
 import { View,Text,StyleSheet,Image,TouchableOpacity,TouchableHighlight } from 'react-native'
 
+let  id = 'favaz';
+let user = id.toUpperCase();
+
 export default class DrawerContent extends Component{
 render(){
     return(
@@ -14,7 +17,7 @@ render(){
             </View>
             
             <View style={styles.infoView}>
-            <Text style={styles.nameText}> FAVAZ </Text>
+            <Text style={styles.nameText}> {user} </Text>
             <TouchableHighlight style={styles.GoldButton}>
             <Text style={styles.GoldText}>Gold</Text>
             </TouchableHighlight>
